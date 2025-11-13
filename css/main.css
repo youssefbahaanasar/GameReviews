@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 12px;
+    background-color: #272B30;
+}
+a{
+    cursor: pointer;
+}
+.loading{
+    background-color:#272B30;
+    z-index: 999999999999999999;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+.gameDetails .fa-xmark{
+    color: #C9CACA;
+}
+.gameDetails{
+    background-color: #27282B;
+    color: white;
+    z-index: 9999;
+}
+.gameDetails p{
+    font-size: 14px;
+}
+.gameDetails span{
+    background-color: #0DCAF0;
+    color: black;
+}
+.header img{
+    max-height: 30vh;
+    width: 100%;
+    object-fit: cover;
+}
+nav{
+    margin-top: -1.875rem;
+}
+.navbar-toggler:focus{
+    box-shadow: unset;
+}
+.nav-bg-color{
+    background-color: #3A497B;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+.nav-link{
+    color: white;
+    transition: all .5s;
+}
+.nav-link:focus, 
+.nav-link:hover,
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show{
+    color: #09c;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+.card{
+    filter: grayscale(0.7);
+    transition: all .5s;
+    cursor: pointer;
+}
+.card:hover{
+    filter: unset;
+    transform: scale(1.04);
+}
+.card-body h3,
+.card{
+    font-size: 14px;
+}
+.card-title a{
+    font-size: 12px;
+    font-weight: 700;
+}
+.card-footer span{
+    font-size: 11px;
+    background-color: #32383e;
+}
+@media  (max-width: 358px) {
+    nav{
+        width: 100%;
+    }
+}
+@media  (max-width: 405px) and (min-width:358px){
+    nav{
+        width: 85%;
+    }
+}
+@media  (max-width: 991px) and (min-width:405px) {
+    nav{
+        width: 75%;
+    }
+.navbar-expand-lg .navbar-nav .nav-link {
+        padding: 15px 0;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .navbar-collapse {
+        background-color: transparent;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .navbar-collapse .navbar-nav a.nav-link:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+}
+@media  (min-width: 991px) {
+    nav{
+        width: 75%;
+    }
+}

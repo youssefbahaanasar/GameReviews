@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo-sm.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>GameReviews</title>
+  </head>
+  <body>
+    <div
+      class="loading d-none position-fixed start-0 end-0 top-0 bottom-0 d-flex justify-content-center align-items-center"
+    >
+      <span class="loader"></span>
+    </div>
+    <div class="gameDetails d-none vh-100 start-0 end-0 top-0 bottom-0">
+      <div class="container position-relative">
+        <h1 class="h3 my-4">Details Game</h1>
+        <button
+          class="btn-close btn-close-white position-absolute end-0 top-0 fs-6 px-3"
+          id="btnClose"
+        ></button>
+        <div class="row">
+          <div class="col-lg-4">
+            <img
+              id="gameImage"
+              src="./images/thumbnail.jpg"
+              style="width: 100%"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-8">
+            <h2 id="gameTitle" class="h3">Title: <span></span></h2>
+            <h3 class="h6 mb-3">
+              Category: <span id="gameCategorey" class="badge"></span>
+            </h3>
+            <h3 class="h6 mb-3">
+              Platform: <span id="gamePlatform" class="badge"></span>
+            </h3>
+            <h3 class="h6 mb-3">
+              Status: <span id="gameStatus" class="badge"></span>
+            </h3>
+            <p id="gameDesc">
+              Throne and Liberty is a free-to-play multi-platform MMORPG from
+              NCSoft and Amazon Games. The open-world game features large-scale
+              PvPvE in which players can explore everything from sprawling
+              plains to mountain peaks. To survive, players will need to be able
+              to adapt and make decisions based on weather, time of day, and –
+              of course – what other players are doing. The ultimate goal is to
+              claim the throne by defeating Kazar. To do this, players will need
+              to make use of the ability to transform and take the battle to not
+              just the land, but also the sea and air. The game features
+              cross-play bringing together players on PC, Xbox Series X}S, and
+              PlayStation 5. Players on the PS5 can choose to disable
+              cross-play. It’s also worth noting that cross-progression is not
+              supported.
+            </p>
+            <a
+              id="gameUrl"
+              href=""
+              type="button"
+              class="btn btn-outline-warning text-white"
+              >Show Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div class="header">
+        <img src="./images/imgi_1_wraper.png" alt="" />
+      </div>
+      <nav
+        class="navbar position-sticky top-0 navbar-expand-lg nav-bg-color mx-auto rounded-4 z-3"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid justify-content-between p-1 px-2">
+          <div class="logo">
+            <img src="./images/logo-sm.png" style="max-width: 40px" alt="" />
+            <a class="navbar-brand text-uppercase align-middle">Game Reviews</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-grow-0"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav text-uppercase">
+              <a id="MMORPG" class="nav-link active" data-categrey="MMORPG"
+                >MMORPG</a
+              >
+              <a id="shooter" class="nav-link" data-categrey="shooter">Shooter</a>
+              <a id="sailing" class="nav-link" data-categrey="sailing">Sailing</a>
+              <a id="permadeath" class="nav-link" data-categrey="permadeath"
+                >Permadeath</a
+              >
+              <a id="superhero" class="nav-link" data-categrey="superhero"
+                >Superhero</a
+              >
+              <a id="pixel" class="nav-link" data-categrey="pixel">Pixel</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="gamesSection" class="container">
+        <div id="gamesList" class="row"></div>
+      </section>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
